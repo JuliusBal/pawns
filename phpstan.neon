@@ -1,0 +1,12 @@
+includes:
+    - vendor/larastan/larastan/extension.neon
+
+parameters:
+    checkGenericClassInNonGenericObjectType: false
+    paths:
+        - app/
+    excludePaths:
+        - app/Http/Controllers/Auth/
+        - app/Http/Requests/Auth/
+    # Level 9 is the highest level
+    level: 7
